@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+}
+
+.card {
+    height: 200px;
+    background-color: rgb(48, 232, 168);
+    flex: 1;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.card:hover{
+    flex: 5;
+    background-color: rgb(158, 195, 121);
+}

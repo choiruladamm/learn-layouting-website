@@ -1,0 +1,51 @@
+
+/* 1 */
+/* .nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  flex-grow: 0;
+} */
+
+
+/* 2 */
+.card {
+  background-color: rgb(38, 205, 38);
+  padding: 10px;
+}
+
+.card:nth-child(2) {
+  background: pink;
+}
+
+.card-title {
+  padding: 0;
+  margin: 0;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 10px solid;
+}
+
+@media (min-width: 600px) {
+  .columns {
+    flex-direction: row;
+  }
+}
+
+.columns > * {
+  flex-basis: 100%;
+}
+
+
