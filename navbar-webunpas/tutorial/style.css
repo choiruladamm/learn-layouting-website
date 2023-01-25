@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: white;
+  font-family: "Satisfy", cursive;
+  font-size: 1em;
+}
+
+nav {
+  display: flex;
+  background-color: darkslateblue;
+  justify-content: space-around;
+  /* padding: 20px 0; */
+  height: 50px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 40%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: rgb(183, 173, 250);
+}
+
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.menu-toogle input {
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-toogle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.menu-toogle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toogle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toogle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, 0.8px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0.8px);
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: darkslateblue;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  .menu-toogle {
+    display: flex;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

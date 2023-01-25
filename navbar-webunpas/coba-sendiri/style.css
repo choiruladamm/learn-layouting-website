@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  color: white;
+  font-family: 'Satisfy', cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkorange;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 0.8em;
+}
+
+nav ul li a:hover {
+  color: rgb(119, 77, 27);
+}
+
+@media screen and (max-width: 768px){
+  nav ul {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  nav ul {
+    display: none;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  color: white;
+  font-family: 'Satisfy', cursive;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: darkorange;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 0.9em;
+}
+
+nav ul li a:hover {
+  color: rgb(252, 194, 124);
+  font-size: 0.9em;
+}
+
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.menu-toogle span{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  nav {
+    padding: 20px 20px;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu-toogle {
+    display: flex;
+  }
+}
