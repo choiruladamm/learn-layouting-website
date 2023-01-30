@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+/* 
+.container {
+  width: 600px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 1rem;
+  height: 500px;
+}
+
+.kotak {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 1rem;
+  float: right;
+} */
+
+.column {
+  border: 10px solid black;
+  margin: auto;
+  width: 700px;
+}
+
+.column .layout-1 {
+  background-color: lightgreen;
+  width: 10rem;
+  height: 30rem;
+  float: left;
+}
+
+.column .layout-2 {
+  background-color: lightcoral;
+  width: 25rem;
+  height: 30rem;
+}
+
+/* .column .layout-2 {
+  background-color: lightgreen;
+  width: 10rem;
+  height: 30rem;
+  float: right;
+} */
