@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 2rem 15%;
+  background-color: #eee;
+}
+
+section {
+  background-color: #fff;
+}
+
+.header h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+}
+
+.header ul {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.header ul li:nth-child(1){
+  margin-left: 1.2rem;
+}
+
+.header ul li {
+  margin-left: 1rem;
+}
+
+.header ul li a {
+  color: black;
+}
+
+.header ul li a:hover {
+  color: orangered;
+}
+
+.main-content .hero-image {
+  background-color: lightblue;
+  height: 15rem;
+  background: url(banner-bg.webp);
+  background-size: cover;
+}
+
+.main-content .title-artikel h1{
+  margin-left: 1rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.main-content .created-artikel p{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.main-content .created-artikel span {
+  color: orangered;
+}
+
+.main-content .text-artikel{
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.main-content .text-artikel p {
+  margin-top: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: darkslategrey;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+}
+
+.footer span {
+  color: orangered;
+}
