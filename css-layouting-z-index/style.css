@@ -1,0 +1,28 @@
+* {
+  margin: 0; padding: 0;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+}
+
+.satu {
+  background-color: lightcoral;
+}
+
+.dua {
+  background-color: lightgreen;
+}
+
+.tiga {
+  background-color: re;
+}
+
+.kotak {
+  margin: auto;
+  position: fixed;
+  background-color: black;
+  height: 100px;
+  width: 200px;
+}
