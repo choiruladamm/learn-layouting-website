@@ -1,0 +1,178 @@
+/* Lat 0 */
+/* * {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  height: 150px;
+  border: 3px solid black;
+  margin: 30px auto;
+  padding: 5px;
+}
+
+.container div {
+  display: flex;
+  flex: 1;
+  background-color: rgb(104, 104, 245);
+  color: white;
+  margin: 10px;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .dua {
+} */
+
+/* Lat 1 - Column */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  line-height: 1.7;
+}
+
+.container-satu {
+  display: flex;
+  background-color: #fff;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+
+.kolom-utama p {
+  margin-bottom: 15px;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* lat 2 */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-dua div {
+  width: 30%;
+  padding: 20px;
+}
+
+.layanan-satu {
+  background-color: lightgreen;
+}
+
+.layanan-dua {
+  background-color: lightblue;
+}
+
+.layanan-tiga {
+  background-color: lightpink;
+}
+
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumnail-gallery {
+  width: 25%;
+}
+
+.thumnail-gallery img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.card {
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card .header{
+  height: 150px;
+  background-color: darkcyan;
+}
+
+.card .content {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.container-lima {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  border: 2px solid black;
+  display: flex;
+}
+
+.container-lima .kotak {
+  background-color: lightgreen;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  display: flex;
+}
+
+.container-lima .kotak  p {
+  margin: auto;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container-dua {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container-dua div {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .container-tiga {
+    padding: 20px;
+  }
+
+  .thumnail-gallery {
+    width: 50%;
+  }
+}
+
