@@ -1,123 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grocery Store</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
 
-  <!-- swipper js -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- swipper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
-  <!-- font awesome cdn link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-  <!-- css file -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-shopping-bag"></i> shapii. </a>
+      <nav class="nav">
+        <a href="" id="home">home</a>
+        <a href="" id="features">features</a>
+        <a href="" id="product">product</a>
+        <a href="" id="categories">categories</a>
+        <a href="" id="review">review</a>
+        <a href="" id="blogs">blogs</a>
+      </nav>
 
-  <!-- header -->
-  <header class="header">
-    <a href="#" class="logo"><i class="fas fa-shopping-bag"></i> shapii. </a>
-    <nav class="nav">
-      <a href="" id="home">home</a>
-      <a href="" id="features">features</a>
-      <a href="" id="product">product</a>
-      <a href="" id="categories">categories</a>
-      <a href="" id="review">review</a>
-      <a href="" id="blogs">blogs</a>
-    </nav>
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
 
-    <div class="icons">
-      <div class="fas fa-bars" id="menu-btn"></div>
-      <div class="fas fa-search" id="search-btn"></div>
-      <div class="fas fa-shopping-cart" id="cart-btn"></div>
-      <div class="fas fa-user" id="login-btn"></div>
-    </div>
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here... " />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
 
-    <form action="" class="search-form">
-      <input type="search" id="search-box" placeholder="search here... ">
-      <label for="search-box" class="fas fa-search"></label>
-    </form>
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">$4.99</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>union</h3>
+            <span class="price">$4.99</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="assets/cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>chicken</h3>
+            <span class="price">$4.99</span>
+            <span class="quantity">qty : 1</span>
+          </div>
+        </div>
+        <div class="total">total : $20.99</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
 
-    <div class="shopping-cart">
-      <div class="box">
-        <i class="fas fa-trash"></i>
-        <img src="assets/cart-img-1.png" alt="">
-        <div class="content">
-          <h3>watermelon</h3>
-          <span class="price">$4.99</span>
-          <span class="quantity">qty : 1</span>
+      <div class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box" />
+        <input type="password" placeholder="your password" class="box" />
+        <p>forget your password<a href="#">click here</a></p>
+        <p>dont have a account<a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn" />
+      </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh and <span>organic</span> product for you</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea
+          aspernatur sapiente, ut perferendis sequi.
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+
+    <!-- features -->
+    <section class="features" id="features">
+      <h1 class="heading">our <span>features</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/feature-img-1.png" alt="" />
+          <h3>fresh and organic</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+            facilis?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="assets/feature-img-2.png" alt="" />
+          <h3>free delivery</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+            facilis?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="assets/feature-img-3.png" alt="" />
+          <h3>easy payment</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+            facilis?
+          </p>
+          <a href="#" class="btn">read more</a>
         </div>
       </div>
-      <div class="box">
-        <i class="fas fa-trash"></i>
-        <img src="assets/cart-img-2.png" alt="">
-        <div class="content">
-          <h3>union</h3>
-          <span class="price">$4.99</span>
-          <span class="quantity">qty : 1</span>
+    </section>
+
+    <!-- product -->
+    <h1 class="heading">our <span>products</span></h1>
+    <div class="product-slider">
+      <div class="wrapper">
+        <div class="box">
+          
         </div>
       </div>
-      <div class="box">
-        <i class="fas fa-trash"></i>
-        <img src="assets/cart-img-3.png" alt="">
-        <div class="content">
-          <h3>chicken</h3>
-          <span class="price">$4.99</span>
-          <span class="quantity">qty : 1</span>
-        </div>
-      </div>
-      <div class="total">total : $20.99</div>
-      <a href="#" class="btn">checkout</a>
     </div>
 
-    <div class="login-form">
-      <h3>login now</h3>
-      <input type="email" placeholder="your email" class="box">
-      <input type="password" placeholder="your password" class="box">
-      <p>forget  your password<a href="#">click here</a></p>
-      <p>dont have a account<a href="#">create now</a></p>
-      <input type="submit" value="login now" class="btn">
-    </div>
-  </header>
-
-  <!-- home -->
-  <section class="home" id="home">
-    <div class="content">
-      <h3>fresh and <span>organic</span> product for you</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea aspernatur sapiente, ut perferendis sequi.</p>
-      <a href="#" class="btn">shop now</a>
-    </div>
-  </section>
-
-  <!-- features -->
-  <section class="features" id="features">
-    <h1 class="heading">our <span>features</span></h1>
-    <div class="box-container">
-      <div class="box">
-        <img src="assets/feature-img-1.png" alt="">
-        <h3>fresh and organic</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facilis?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-      <div class="box">
-        <img src="assets/feature-img-2.png" alt="">
-        <h3>free delivery</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facilis?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-      <div class="box">
-        <img src="assets/feature-img-3.png" alt="">
-        <h3>easy payment</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facilis?</p>
-        <a href="#" class="btn">read more</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- js file -->
-  <script src="script.js"></script>
-</body>
+    <!-- js file -->
+    <script src="script.js"></script>
+  </body>
 </html>
