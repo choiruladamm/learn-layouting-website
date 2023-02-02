@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        padding: 0; margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .container {
+        width: 50rem;
+        border: 2px solid;
+        margin: auto;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .header {
+        background-color: lightblue;
+        padding: 1.5rem 0;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      .content .sidebar {
+        flex: 5;
+      }
+
+      .content .sidebar .sidenav {
+        background-color: lightcoral;
+        padding: 2rem 0;
+      }
+
+      .content .sidebar .nav {
+        background-color:lightgreen;
+        padding: 3rem 0;
+      }
+
+      .content .main {
+        display: flex;
+        background-color: blue;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .footer {
+        background-color: aqua;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="content">
+        <div class="sidebar">
+          <div class="sidenav">side nav</div>
+          <div class="nav">nav</div>
+        </div>
+        <div class="main">main</div>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
