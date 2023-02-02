@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      margin: auto;
+      width: 800px;
+      border: 3px solid black;
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .header {
+      padding: 20px 0;
+      background-color: purple;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    .content .sidebar .aside {
+      background-color: lightblue;
+      padding: 40px 0;
+    }
+
+    .content .sidebar .nav {
+      background-color: lightcoral;
+      padding: 60px 0;
+    }
+
+    .content .main {
+      background-color: lightseagreen;
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer {
+      background-color: lightgrey;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">header</div>
+    <div class="content">
+      <div class="sidebar">
+        <div class="aside">aside</div>
+        <div class="nav">nav</div>
+      </div>
+      <div class="main">main</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+  
+</body>
+</html>
